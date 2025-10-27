@@ -25,26 +25,37 @@ st.set_page_config(
 def load_all_models():
     """Load all ML models with error handling"""
     try:
+        models_loaded = 0
+        total_models = 3
+        
         if os.path.exists('models/churn_model.pkl'):
             churn_model = joblib.load('models/churn_model.pkl')
+            models_loaded += 1
         else:
             churn_model = None
 
         if os.path.exists('models/ltv_model.pkl'):
             ltv_model = joblib.load('models/ltv_model.pkl')
+            models_loaded += 1
         else:
             ltv_model = None
 
         if os.path.exists('models/cluster_model.pkl'):
             cluster_model = joblib.load('models/cluster_model.pkl')
+            models_loaded += 1
         else:
             cluster_model = None
 
+        if models_loaded == total_models:
+            st.sidebar.success(f"✅ All {total_models} models loaded successfully!")
+        elif models_loaded > 0:
+            st.sidebar.warning(f"⚠️ {models_loaded}/{total_models} models loaded")
+        else:
+            st.sidebar.error("❌ No models found. Please run the notebooks to train them.")
+
         return churn_model, ltv_model, cluster_model
-    except Exception:
-        st.sidebar.warning(
-            "Some models not found. Please run the notebooks to train them."
-        )
+    except Exception as e:
+        st.sidebar.error(f"Error loading models: {e}")
         return None, None, None
 
 # Caricamento dati
