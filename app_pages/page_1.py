@@ -16,6 +16,7 @@ def render(df):
     """
     st.title("Customer Loyalty & LTV Predictor")
     st.markdown("### Portfolio Project 5: Predictive Analytics")
+    st.markdown("**Status**: ✅ Production Ready | **Deployment**: Heroku")
     
     st.markdown("---")
     
