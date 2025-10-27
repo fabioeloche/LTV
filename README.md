@@ -676,5 +676,6 @@ streamlit run app.py
 ```
 
 ### Technologies & Tools Used
-- Python, Streamlit, XGBoost, Plotly, SHAP, Heroku
+- **Python 3.12.1**, **Streamlit**, **XGBoost**, **Plotly**, **SHAP**, **Heroku**
+- **scikit-learn**, **pandas**, **numpy**, **joblib**, **scipy**
 
