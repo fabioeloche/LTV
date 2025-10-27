@@ -21,6 +21,11 @@ def render(df):
     st.title("Hypothesis Validation")
     st.markdown("**Merit Criteria**: Statistical validation of project hypotheses with proper ML terminology")
     
+    st.info("""
+    This page validates the three core business hypotheses using statistical tests and provides 
+    evidence-based conclusions for the machine learning approach.
+    """)
+    
     st.markdown("---")
     
     # Hypothesis 1: Long-term contracts reduce churn
