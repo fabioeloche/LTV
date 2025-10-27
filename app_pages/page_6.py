@@ -22,6 +22,11 @@ def render(df, ltv_model):
     st.title("Retention ROI Analysis")
     st.markdown("**Business Requirement 4**: Actionable retention recommendations with ROI analysis")
     
+    st.warning("""
+    This analysis provides data-driven recommendations for customer retention strategies, 
+    helping maximize ROI while minimizing unnecessary intervention costs.
+    """)
+    
     st.markdown("---")
     
     # ROI Framework
