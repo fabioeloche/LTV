@@ -120,12 +120,12 @@ def get_retention_recommendation(churn_prob, ltv, cluster_id):
     Generate retention recommendation based on predictions
 
     Args:
-        churn_prob (float): Churn probability
-        ltv (float): Lifetime value
-        cluster_id (int): Cluster ID
+        churn_prob (float): Churn probability (0-1)
+        ltv (float): Lifetime value in USD
+        cluster_id (int): Cluster ID (0-9)
 
     Returns:
-        str: Retention recommendation
+        str: Retention recommendation with priority level
     """
     if churn_prob > 0.7:
         if ltv > 2000:
