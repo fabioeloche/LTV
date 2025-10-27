@@ -200,6 +200,9 @@ def render(df, churn_model, ltv_model, cluster_model):
             **ML Model Success**: The churn prediction model achieves **82% recall** on the test set, 
             meeting the business requirement of identifying at least 80% of at-risk customers. 
             The LTV model achieves **R² = 0.73**, enabling accurate prioritization of high-value customers.
+            
+            **Model Performance**: This represents a significant improvement over random guessing (50% accuracy) 
+            and provides actionable insights for customer retention strategies.
             """)
             
             st.markdown("---")
