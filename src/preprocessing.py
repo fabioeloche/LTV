@@ -11,13 +11,13 @@ from sklearn.model_selection import train_test_split
 
 def preprocess_data(df, target_column='Churn', test_size=0.2, random_state=42):
     """
-    Preprocess data for ML models
+    Preprocess data for ML models with encoding and splitting
 
     Args:
         df (pd.DataFrame): Raw customer dataset
-        target_column (str): Target column name
-        test_size (float): Test set size
-        random_state (int): Random seed
+        target_column (str): Target column name (default: 'Churn')
+        test_size (float): Test set size (default: 0.2)
+        random_state (int): Random seed for reproducibility (default: 42)
 
     Returns:
         tuple: X_train, X_test, y_train, y_test, preprocessor
