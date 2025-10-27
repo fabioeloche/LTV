@@ -196,7 +196,7 @@ def save_model(model, filepath):
 
 def load_models():
     """
-    Load all trained models
+    Load all trained models with error handling
 
     Returns:
         tuple: churn_model, ltv_model, cluster_model
@@ -205,7 +205,11 @@ def load_models():
         churn_model = joblib.load('models/churn_model.pkl')
         ltv_model = joblib.load('models/ltv_model.pkl')
         cluster_model = joblib.load('models/cluster_model.pkl')
+        print("All models loaded successfully!")
         return churn_model, ltv_model, cluster_model
-    except BaseException:
-        print("Models not found. Please train models first.")
+    except FileNotFoundError as e:
+        print(f"Model file not found: {e}")
+        return None, None, None
+    except Exception as e:
+        print(f"Error loading models: {e}")
         return None, None, None
