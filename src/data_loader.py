@@ -44,8 +44,8 @@ def load_data():
 
 def calculate_ltv(df):
     """
-    Calcola Customer Lifetime Value
-    LTV = MonthlyCharges * tenure per non-churners
+    Calculate Customer Lifetime Value
+    LTV = MonthlyCharges * tenure for non-churners
 
     Args:
         df (pd.DataFrame): Customer dataset
@@ -55,7 +55,7 @@ def calculate_ltv(df):
     """
     df_ltv = df.copy()
     df_ltv['LTV'] = df_ltv['MonthlyCharges'] * df_ltv['tenure']
-    return df_ltv[df_ltv['Churn'] == 'No']  # Solo per non-churners
+    return df_ltv[df_ltv['Churn'] == 'No']  # Only for non-churners
 
 
 def get_feature_columns(df):
