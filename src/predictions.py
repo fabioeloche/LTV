@@ -159,7 +159,19 @@ def calculate_roi(churn_prob, ltv):
     success_rate = 0.3  # 30% success rate for interventions
 
     expected_value = (churn_prob * ltv * success_rate) - intervention_cost
-    return max(0, expected_value)
+    roi = max(0, expected_value)
+    
+    # Add ROI category for better interpretation
+    if roi > 100:
+        roi_category = "High Priority"
+    elif roi > 50:
+        roi_category = "Medium Priority"
+    elif roi > 0:
+        roi_category = "Low Priority"
+    else:
+        roi_category = "Skip"
+    
+    return roi, roi_category
 
 
 def predict_churn_batch(df, churn_model, preprocessor):
