@@ -24,6 +24,8 @@ The Customer Loyalty & LTV Predictor is a machine learning application built for
 
 **Live Demo**: [https://lvtpredictor-0e750a52412c.herokuapp.com/](https://lvtpredictor-0e750a52412c.herokuapp.com/)
 
+**Status**: ✅ Production Ready
+
 ### Project Goals
 - Identify loyalty patterns and churn drivers
 - Predict churn probability with interpretability (SHAP)
