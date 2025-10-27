@@ -1,4 +1,8 @@
-"""Unit tests for predictions module"""
+"""Unit tests for predictions module
+
+This module contains unit tests for the predictions functionality,
+ensuring that ROI calculations and cluster assignments work correctly.
+"""
 import unittest
 from src.predictions import get_cluster_name, calculate_roi
 
