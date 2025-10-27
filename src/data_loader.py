@@ -11,7 +11,7 @@ import os
 
 def load_data():
     """
-    Carica il dataset telecom churn (LO7: 7.1)
+    Load telecom churn dataset (LO7: 7.1)
 
     Returns:
         pd.DataFrame: Cleaned customer dataset
@@ -20,23 +20,25 @@ def load_data():
         file_path = "data/WA_Fn-UseC_-Telco-Customer-Churn.csv"
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
+            print(f"Dataset loaded successfully: {len(df)} records")
 
-            # Pulizia iniziale (LO7: 7.2)
+            # Initial cleaning (LO7: 7.2)
             df['TotalCharges'] = pd.to_numeric(
                 df['TotalCharges'], errors='coerce')
             df = df.dropna(subset=['TotalCharges'])
 
             # Calculate LTV for non-churners
             df['LTV'] = df['MonthlyCharges'] * df['tenure']
+            print(f"After cleaning: {len(df)} records")
 
             return df
         else:
-            print(f"File non trovato: {file_path}")
+            print(f"File not found: {file_path}")
             print("Please download the dataset from Kaggle and place it in "
                   "the data/ folder")
             return None
     except Exception as e:
-        print(f"Errore nel caricamento: {e}")
+        print(f"Error loading data: {e}")
         return None
 
 
