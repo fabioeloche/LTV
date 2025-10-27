@@ -163,8 +163,9 @@ def encode_input_data(input_df, label_encoders):
         if col in input_encoded.columns:
             try:
                 input_encoded[col] = encoder.transform(input_encoded[col])
-            except ValueError:
-                # Handle unseen categories
+            except ValueError as e:
+                # Handle unseen categories with warning
+                print(f"Warning: Unseen category in {col}: {e}")
                 input_encoded[col] = 0
 
     return input_encoded
