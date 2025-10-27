@@ -1,4 +1,5 @@
 #!/bin/bash
+# Setup script for Heroku deployment
 mkdir -p ~/.streamlit/
 echo "\
 [server]\n\
