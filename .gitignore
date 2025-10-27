@@ -51,3 +51,7 @@ outputs/*.png
 .DS_Store
 Thumbs.db
 
+# Logs
+*.log
+logs/
+
