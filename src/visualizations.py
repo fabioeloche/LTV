@@ -106,10 +106,10 @@ def create_ltv_distribution_plot(df):
     LO6: 6.5 - Interactive Plotly Plot
 
     Args:
-        df (pd.DataFrame): Customer dataset
+        df (pd.DataFrame): Customer dataset with LTV column
 
     Returns:
-        plotly.graph_objects.Figure: Interactive histogram
+        plotly.graph_objects.Figure: Interactive histogram showing LTV distribution
     """
     df_no_churn = df[df['Churn'] == 'No'].copy()
     df_no_churn['LTV'] = df_no_churn['MonthlyCharges'] * df_no_churn['tenure']
