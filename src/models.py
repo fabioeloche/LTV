@@ -191,7 +191,7 @@ def save_model(model, filepath):
         filepath: Path to save model
     """
     joblib.dump(model, filepath)
-    print(f"Model saved to {filepath}")
+    print(f"✅ Model saved successfully to {filepath}")
 
 
 def load_models():
