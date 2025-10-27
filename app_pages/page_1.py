@@ -195,5 +195,6 @@ def render(df):
     - Navigate to **Loyalty Pattern Analysis** to explore churn patterns
     - Use **Loyalty & LTV Predictor** to make real-time predictions
     - Check **Model Performance** to understand model accuracy
+    - Review **Retention ROI Analysis** for business recommendations
     """)
 
