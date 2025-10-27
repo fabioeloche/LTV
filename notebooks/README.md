@@ -1,5 +1,7 @@
 # Jupyter Notebooks
 
+This directory contains the machine learning development notebooks for the LTV project.
+
 Esegui i notebook in ordine:
 
 1. **01_data_collection.ipynb** ✅ CREATO
