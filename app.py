@@ -145,3 +145,6 @@ else:
         "Download the dataset from "
         "[Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)"
     )
+    st.warning(
+        "If you have the dataset, please check the file path and ensure it's properly formatted."
+    )
