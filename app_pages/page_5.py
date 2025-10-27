@@ -19,6 +19,11 @@ def render():
     st.title("Model Performance")
     st.markdown("**LO5: 5.2** - ML Pipeline Steps and Model Evaluation Metrics")
     
+    st.success("""
+    All models meet or exceed the defined success criteria, demonstrating strong predictive 
+    performance for business applications.
+    """)
+    
     st.markdown("---")
     
     # ML Pipeline Overview
