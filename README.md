@@ -4,17 +4,16 @@
 1. [Project Overview](#project-overview)
 2. [Dataset Content](#dataset-content)
 3. [Business Requirements](#business-requirements)
-4. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+4. [Project Hypotheses](#project-hypotheses)
 5. [Loyalty Pattern Analysis](#loyalty-pattern-analysis)
 6. [Loyalty & LTV Predictor](#loyalty--ltv-predictor)
 7. [Hypothesis Validation](#hypothesis-validation)
 8. [Model Performance](#model-performance)
 9. [Retention ROI Analysis](#retention-roi-analysis)
-10. [Dashboard Design](#dashboard-design)
+10. [Dashboard Design — Customer Loyalty & LTV Predictor](#dashboard-design--customer-loyalty--ltv-predictor)
 11. [Testing](#testing)
-12. [Deployment](#deployment)
-13. [Ethics, Limitations & Future Improvements](#ethics-limitations--future-improvements)
-14. [Author & Acknowledgements](#author--acknowledgements)
+12. [Agile Methodology & Workflow](#agile-methodology--workflow)
+13. [Deployment](#deployment)
 
 
 ## Project Overview
