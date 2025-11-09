@@ -13,8 +13,7 @@
 10. [Dashboard Design](#dashboard-design)
 11. [Testing](#testing)
 12. [Deployment](#deployment)
-13. [Ethics, Limitations & Future Improvements]
-(#ethics-limitations--future-improvements)
+13. [Ethics, Limitations & Future Improvements](#ethics-limitations--future-improvements)
 14. [Author & Acknowledgements](#author--acknowledgements)
 
 
