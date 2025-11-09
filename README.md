@@ -1,5 +1,4 @@
 # Customer Loyalty & LTV Predictor
-Portfolio Project 5 – Predictive Analytics
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -14,7 +13,8 @@ Portfolio Project 5 – Predictive Analytics
 10. [Dashboard Design](#dashboard-design)
 11. [Testing](#testing)
 12. [Deployment](#deployment)
-13. [Ethics, Limitations & Future Improvements](#ethics-limitations--future-improvements)
+13. [Ethics, Limitations & Future Improvements]
+(#ethics-limitations--future-improvements)
 14. [Author & Acknowledgements](#author--acknowledgements)
 
 
