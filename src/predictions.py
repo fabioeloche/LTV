@@ -160,7 +160,7 @@ def calculate_roi(churn_prob, ltv):
 
     expected_value = (churn_prob * ltv * success_rate) - intervention_cost
     roi = max(0, expected_value)
-    
+
     # Add ROI category for better interpretation
     if roi > 100:
         roi_category = "High Priority"
@@ -170,7 +170,7 @@ def calculate_roi(churn_prob, ltv):
         roi_category = "Low Priority"
     else:
         roi_category = "Skip"
-    
+
     return roi, roi_category
 
 

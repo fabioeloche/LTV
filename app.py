@@ -1,3 +1,4 @@
+import logging
 import streamlit as st
 import joblib
 import os
@@ -7,7 +8,6 @@ import warnings
 warnings.filterwarnings("ignore")
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
-import logging
 logging.getLogger("streamlit").setLevel(logging.ERROR)
 logging.getLogger("plotly").setLevel(logging.ERROR)
 
@@ -27,7 +27,7 @@ def load_all_models():
     try:
         models_loaded = 0
         total_models = 3
-        
+
         if os.path.exists('models/churn_model.pkl'):
             churn_model = joblib.load('models/churn_model.pkl')
             models_loaded += 1
@@ -47,11 +47,14 @@ def load_all_models():
             cluster_model = None
 
         if models_loaded == total_models:
-            st.sidebar.success(f"✅ All {total_models} models loaded successfully!")
+            st.sidebar.success(
+                f"✅ All {total_models} models loaded successfully!")
         elif models_loaded > 0:
-            st.sidebar.warning(f"⚠️ {models_loaded}/{total_models} models loaded")
+            st.sidebar.warning(
+                f"⚠️ {models_loaded}/{total_models} models loaded")
         else:
-            st.sidebar.error("❌ No models found. Please run the notebooks to train them.")
+            st.sidebar.error(
+                "❌ No models found. Please run the notebooks to train them.")
 
         return churn_model, ltv_model, cluster_model
     except Exception as e:
@@ -146,5 +149,6 @@ else:
         "[Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn)"
     )
     st.warning(
-        "If you have the dataset, please check the file path and ensure it's properly formatted."
+        "If you have the dataset, please check the file path and ensure "
+        "it's properly formatted."
     )

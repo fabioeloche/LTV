@@ -50,11 +50,11 @@ def create_correlation_heatmap(df, method='spearman'):
     ))
 
     fig.update_layout(
-        title=f"{method.capitalize()} Correlation Matrix - Customer Churn Analysis",
+        title=f"{
+            method.capitalize()} Correlation Matrix - Customer Churn Analysis",
         xaxis_title="Features",
-        yaxis_title="Features"
-    )
-    
+        yaxis_title="Features")
+
     # Set size using config instead of deprecated width/height
     fig.update_layout(
         autosize=True,
