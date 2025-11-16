@@ -14,6 +14,7 @@
 11. [Testing](#testing)
 12. [Agile Methodology & Workflow](#agile-methodology--workflow)
 13. [Deployment](#deployment)
+14. [Credits](#credits)
 
 
 ## Project Overview
@@ -677,3 +678,10 @@ streamlit run app.py
 - **Python 3.12.1**, **Streamlit**, **XGBoost**, **Plotly**, **SHAP**, **Heroku**
 - **scikit-learn**, **pandas**, **numpy**, **joblib**, **scipy**
 
+## Credits
+
+This project was inspired by the [Churnometer](https://github.com/Code-Institute-Solutions/churnometer), which provided valuable insights into dashboard design, ML pipeline implementation, and Streamlit best practices.
+
+The dataset used for this analysis is the [Telco Customer Churn Dataset](https://www.kaggle.com/codeinstitute/telecom-churn-dataset) from Kaggle.
+
+I acknowledge and appreciate the foundational work and inspiration provided by the Code Institute.
